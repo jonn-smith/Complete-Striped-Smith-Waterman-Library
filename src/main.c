@@ -192,7 +192,7 @@ int main (int argc, char * const argv[]) {
 	int32_t l, m, k, match = 2, mismatch = 2, gap_open = 3, gap_extension = 1, path = 0, reverse = 0, n = 5, sam = 0, protein = 0, header = 0, s1 = 67108864, s2 = 128, filter = 0;
 	int8_t* mata = (int8_t*)calloc(25, sizeof(int8_t));
 	const int8_t* mat = mata;
-	char mat_name[16];
+	char mat_name[1024];
 	mat_name[0] = '\0';
 	int8_t* ref_num = (int8_t*)malloc(s1);
 	int8_t* num = (int8_t*)malloc(s2), *num_rc = 0;
